@@ -1,0 +1,82 @@
+/* Situação de emergencia */
+
+.emergency-guide {
+  background-color: #111;
+  color: #f9f9f9;
+  padding: 50px 40px;
+  margin: auto;
+}
+
+.emergency-guide h2 {
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.emergency-guide p {
+  font-size: 18px;
+  line-height: 1.6;
+  text-align: justify;
+  margin-top: 20px;
+  text-indent: 15px;
+}
+
+.emergency-guide ul {
+  margin: 20px 1px;
+  padding-left: 0px;
+}
+
+.emergency-guide li {
+  margin-bottom: 12px;
+}
+
+/* Contatos de emergência */
+
+.linha-ziguezague {
+    color: white;
+    padding: 0px 0px;
+}
+
+.bloco {
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 60px;
+    flex-wrap: wrap;
+}
+
+.bloco.reverso {
+  flex-direction: row-reverse;
+  background-color: white;
+  color: black;
+}
+
+.imagem, .texto {
+  flex: 1;
+  padding: 20px;
+}
+
+.imagem img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.texto h2 {
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+.texto p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .bloco, .bloco.reverso {
+    flex-direction: column;
+  }
+}
