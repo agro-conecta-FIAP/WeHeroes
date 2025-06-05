@@ -1,0 +1,141 @@
+.container-login {
+  display: flex;
+  min-height: 100vh;
+  background-color: var(--white);
+}
+
+.container-login-aside {
+  flex: 1;
+  background-color: var(--primary-color);
+  color: var(--white);
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.container-login-aside::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(45deg, var(--primary-dark), var(--primary-color));
+  opacity: 0.9;
+}
+
+.container-login-aside h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  position: relative;
+  
+}
+
+.container-login-aside p {
+  font-size: 1.125rem;
+  line-height: 1.8;
+  max-width: 400px;
+  position: relative;
+}
+
+.container-login-main {
+  flex: 1;
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 50%;
+  margin: 0 auto;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: var(--text-color);
+}
+
+.form-group input {
+  width: 100%;
+  padding: 0.875rem 1rem;
+  border: 2px solid var(--gray-light);
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input:focus {
+  border-color: var(--primary-color);
+}
+
+.form-group input::placeholder {
+  color: var(--gray);
+}
+
+button[type="submit"] {
+  width: 100%;
+  padding: 1rem;
+  background-color: var(--primary-color);
+  color: var(--white);
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: var(--primary-dark);
+}
+
+.container-register {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.container-register p {
+  color: var(--text-color);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .container-login {
+    flex-direction: column;
+  }
+
+  .container-login-aside {
+    padding: 2rem;
+    text-align: center;
+  }
+
+  .container-login-aside p {
+    margin: 0 auto;
+  }
+
+  .container-login-main {
+    padding: 2rem;
+  }
+}
+
+/* Animações */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.container-login-main {
+  animation: fadeIn 0.5s ease-out;
+}

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WeHeroes - Dashboard</title>
+    <link rel="stylesheet" href="../style/global.css" />
+    <link rel="stylesheet" href="../style/dashboard.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="dashboard-outer">
+      <header class="dashboard-header" role="banner">
+        <h1>WeHeroes</h1>
+        <p class="dashboard-desc">
+          Juntos, podemos agir rápido em situações de emergência e proteger o
+          meio ambiente.
+        </p>
+      </header>
+      <main class="dashboard-main-centered" role="main">
+        <div class="dashboard-buttons-row">
+          <button
+            class="dashboard-square-btn sos-btn"
+            id="sosButton"
+            aria-label="Chamar serviço de emergência, SOS"
+          >
+            <span class="icon">
+              <!-- Feather Alert Triangle -->
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="40"
+                height="40"
+                fill="none"
+                stroke="#ff4b4b"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="feather feather-alert-triangle"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+                focusable="false"
+              >
+                <path
+                  d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"
+                />
+                <line x1="12" y1="9" x2="12" y2="13" />
+                <line x1="12" y1="17" x2="12.01" y2="17" />
+              </svg>
+            </span>
+            <span class="label">SOS</span>
+          </button>
+          <button
+            class="dashboard-square-btn photo-btn"
+            id="photoButton"
+            aria-label="Enviar foto de ocorrência"
+          >
+            <span class="icon">
+              <!-- Feather Camera -->
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="40"
+                height="40"
+                fill="none"
+                stroke="#2e7d32"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="feather feather-camera"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+                focusable="false"
+              >
+                <path
+                  d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h3.17a2 2 0 0 0 1.41-.59l1.83-1.83A2 2 0 0 1 10.83 2h2.34a2 2 0 0 1 1.42.59l1.83 1.83A2 2 0 0 0 17.83 5H21a2 2 0 0 1 2 2z"
+                />
+                <circle cx="12" cy="13" r="4" />
+              </svg>
+            </span>
+            <span class="label">Enviar Foto</span>
+          </button>
+        </div>
+      </main>
+      <footer class="dashboard-footer">
+        <p class="dashboard-desc">
+          Este projeto conecta pessoas dispostas a ajudar em momentos de
+          catástrofe ou degradação ambiental. Sua participação faz a
+          diferença!
+        </p>
+      </footer>
+    </div>
+    <script src="../interaction/route-controller/dashboard.js"></script>
+  </body>
+</html>

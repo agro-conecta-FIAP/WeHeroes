@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Enviar Foto - WeHeroes</title>
+    <link rel="stylesheet" href="../style/global.css" />
+    <link rel="stylesheet" href="../style/enviar-foto.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="enviar-foto-bg">
+      <main class="enviar-foto-main" role="main">
+        <form class="enviar-foto-form" id="enviarFotoForm" autocomplete="off">
+          <h1 class="enviar-foto-title">Enviar Foto</h1>
+          <label for="foto" class="enviar-foto-label">Selecione uma foto</label>
+          <input
+            type="file"
+            id="foto"
+            name="foto"
+            accept="image/*"
+            capture="environment"
+            required
+            aria-required="true"
+          />
+          <label for="comentario" class="enviar-foto-label">Comentário</label>
+          <textarea
+            id="comentario"
+            name="comentario"
+            rows="3"
+            maxlength="300"
+            placeholder="Descreva a situação..."
+            required
+            aria-required="true"
+          ></textarea>
+          <button type="submit" class="enviar-foto-btn">Enviar</button>
+        </form>
+      </main>
+    </div>
+    <script src="../interaction/route-controller/enviar-foto.js"></script>
+  </body>
+</html>
