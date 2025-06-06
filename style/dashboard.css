@@ -42,6 +42,7 @@
   justify-content: center;
   align-items: center;
   max-width: 700px;
+  margin-bottom: 40px;
 }
 
 .dashboard-square-btn {
@@ -212,4 +213,56 @@
 .dashboard-square-btn:focus .icon svg {
   stroke: #fff !important;
   transition: stroke 0.2s;
+}
+
+.emergency-info {
+  background-color: #f9f9f9;
+  padding: 20px;
+  margin: 30px auto;
+  border-radius: 8px;
+  max-width: 800px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.emergency-info h2 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  color: #d62828;
+}
+
+.emergency-info ul {
+  padding-left: 20px;
+  margin: 15px 0;
+}
+
+.emergency-info li {
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+
+.emergency-info {
+  background-color: #f9f9f9;
+  padding: 20px;
+  margin: 40px auto 60px auto;
+  border-radius: 8px;
+  max-width: 800px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  text-align: left;
+}
+
+.emergency-info h2 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  color: #d62828;
+}
+
+.emergency-info ul {
+  padding-left: 20px;
+  margin: 15px 0;
+}
+
+.emergency-info li {
+  margin-bottom: 10px;
+  font-weight: 500;
 }
