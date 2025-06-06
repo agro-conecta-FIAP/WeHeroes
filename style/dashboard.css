@@ -252,18 +252,3 @@
   text-align: left;
 }
 
-.emergency-info h2 {
-  font-size: 1.8rem;
-  margin-bottom: 15px;
-  color: #d62828;
-}
-
-.emergency-info ul {
-  padding-left: 20px;
-  margin: 15px 0;
-}
-
-.emergency-info li {
-  margin-bottom: 10px;
-  font-weight: 500;
-}
